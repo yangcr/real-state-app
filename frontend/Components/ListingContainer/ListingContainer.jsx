@@ -1,5 +1,5 @@
 import React from "react";
-import ListingCard from "../ListingCard.jsx"
+import ListingCard from "../ListingCard/ListingCard.jsx"
 import ListingContainerStyles from "./ListingContainerStyles.module.css";
 
 function ListingContainer() {
