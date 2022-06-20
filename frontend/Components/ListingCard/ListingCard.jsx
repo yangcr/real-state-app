@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card } from "antd";
+import { Card } from "antd";
 import ListingCardStyles from "./ListingCard.module.css";
 import CardCharacteristics from "./CardCharacteristics";
 
