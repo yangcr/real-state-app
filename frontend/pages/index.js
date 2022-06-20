@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import SearchBox from '../Components/SearchBox/SearchBox';
 import ListingContainer from '../Components/ListingContainer/ListingContainer';
+import ItemDetails from '../Components/ItemDetails/ItemDetails';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <SearchBox />
         <ListingContainer/>
+        <ItemDetails/>
 
       </main>
 
