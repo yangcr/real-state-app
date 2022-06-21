@@ -5,37 +5,37 @@ import ListingContainerStyles from "./ListingContainerStyles.module.css";
 function ListingContainer() {
   return (
     <>
-    <div className={ListingContainerStyles.listingContainer}>
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-      <ListingCard />
-    </div>
+      <div className={ListingContainerStyles.listingContainer}>
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+        <ListingCard />
+      </div>
     </>
   );
 }

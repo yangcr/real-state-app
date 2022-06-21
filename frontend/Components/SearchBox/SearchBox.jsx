@@ -7,7 +7,7 @@ function SearchBox() {
   return (
     <>
       <Form layout="vertical" className={SearchBoxStyles.formContainer}>
-          <div className={SearchBoxStyles.formGroup}>
+        <div className={SearchBoxStyles.formGroup}>
           <Form.Item label="Operation type">
             <Select
               defaultValue="all"
@@ -33,8 +33,8 @@ function SearchBox() {
               <Option value="apartment">Apartment</Option>
             </Select>
           </Form.Item>
-          </div>
-          <div className={SearchBoxStyles.formGroup}>
+        </div>
+        <div className={SearchBoxStyles.formGroup}>
           <Form.Item label="Min. price">
             <Input
               placeholder="e.g: 50.000"
@@ -52,16 +52,16 @@ function SearchBox() {
               className={SearchBoxStyles.searchInput}
             />
           </Form.Item>
-          </div>
+        </div>
 
-          <Form.Item label="Min. floor area (in m2)">
-            <Input
-              placeholder="e.g: 75"
-              allowClear
-              type="number"
-              className={SearchBoxStyles.searchInput}
-            />
-          </Form.Item>
+        <Form.Item label="Min. floor area (in m2)">
+          <Input
+            placeholder="e.g: 75"
+            allowClear
+            type="number"
+            className={SearchBoxStyles.searchInput}
+          />
+        </Form.Item>
       </Form>
     </>
   );

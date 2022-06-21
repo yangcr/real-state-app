@@ -1,17 +1,16 @@
 .searchInput {
-    min-width: 250px;
+  min-width: 250px;
 }
 
 .formContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 5em;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+  justify-content: center;
 }
 
 .formGroup {
-    display: flex;
-    flex-direction: row;
-    gap: 1.3em;
+  display: flex;
+  flex-direction: row;
+  gap: 1.3em;
 }
