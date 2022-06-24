@@ -22,9 +22,7 @@ function SearchBox() {
           <Form.Item label="Property type">
             <Select
               defaultValue="all"
-              style={{
-                width: 120,
-              }}
+              className={styles.formSelect}
             >
               <Option value="all">All</Option>
               <Option value="house">House</Option>

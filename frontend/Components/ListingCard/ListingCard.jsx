@@ -3,16 +3,16 @@ import { Card } from "antd";
 import styles from "./ListingCard.module.css";
 import CardCharacteristics from "./CardCharacteristics";
 
-const CardListing = ({sku, characteristics, cardLocation, cardTitle, imageSource, cardPrice, productDescription, squareMeters}) => (
+const CardListing = ({ sku, characteristics, cardLocation, cardTitle, imageSource, cardPrice, productDescription, squareMeters }) => (
   <>
     <Card
-    sku={sku}
+      sku={sku}
       hoverable
       className={styles.cardContainer}
       cover={
         <img
           alt="image of the living room of a house"
-          src={ imageSource }
+          src={imageSource}
         />
       }
     >
@@ -32,7 +32,7 @@ const CardListing = ({sku, characteristics, cardLocation, cardTitle, imageSource
         <p>
           {productDescription}
         </p>
-        <CardCharacteristics characteristics={characteristics}/>
+        <CardCharacteristics characteristics={characteristics} />
       </div>
     </Card>
   </>
