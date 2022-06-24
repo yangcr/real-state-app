@@ -1,10 +1,10 @@
 import React from 'react'
-import CardCharacteristicsStyles from "./CardCharacteristics.module.css";
+import styles from "./CardCharacteristics.module.css";
 
 function CardCharacteristics() {
   return (
     <>
-      <div className={CardCharacteristicsStyles.cardCharacteristics}>
+      <div className={styles.cardCharacteristics}>
         <p>2~5 rooms</p>
         <p>2~5 rooms</p>
         <p>2~5 rooms</p>

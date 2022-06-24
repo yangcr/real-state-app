@@ -1,3 +1,7 @@
+.cardContainer {
+  width: 350px;
+}
+
 .cardContent {
   display: flex;
   flex-direction: column;

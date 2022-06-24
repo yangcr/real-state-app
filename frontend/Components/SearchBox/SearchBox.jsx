@@ -1,19 +1,17 @@
 import React from "react";
 import { Input, Select, Form } from "antd";
-import SearchBoxStyles from "./SearchBox.module.css";
+import styles from "./SearchBox.module.css";
 const { Option } = Select;
 
 function SearchBox() {
   return (
     <>
-      <Form layout="vertical" className={SearchBoxStyles.formContainer}>
-        <div className={SearchBoxStyles.formGroup}>
+      <Form layout="vertical" className={styles.formContainer}>
+        <div className={styles.formGroup}>
           <Form.Item label="Operation type">
             <Select
               defaultValue="all"
-              style={{
-                width: 120,
-              }}
+              className={styles.formSelect}
             >
               <Option value="all">All</Option>
               <Option value="buy">Buy</Option>
@@ -34,13 +32,13 @@ function SearchBox() {
             </Select>
           </Form.Item>
         </div>
-        <div className={SearchBoxStyles.formGroup}>
+        <div className={styles.formGroup}>
           <Form.Item label="Min. price">
             <Input
               placeholder="e.g: 50.000"
               allowClear
               type="number"
-              className={SearchBoxStyles.searchInput}
+              className={styles.searchInput}
             />
           </Form.Item>
 
@@ -49,7 +47,7 @@ function SearchBox() {
               placeholder="e.g: 500.000"
               allowClear
               type="number"
-              className={SearchBoxStyles.searchInput}
+              className={styles.searchInput}
             />
           </Form.Item>
         </div>
@@ -59,7 +57,7 @@ function SearchBox() {
             placeholder="e.g: 75"
             allowClear
             type="number"
-            className={SearchBoxStyles.searchInput}
+            className={styles.searchInput}
           />
         </Form.Item>
       </Form>

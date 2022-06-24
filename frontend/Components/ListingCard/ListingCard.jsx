@@ -1,15 +1,13 @@
 import React from "react";
 import { Card } from "antd";
-import ListingCardStyles from "./ListingCard.module.css";
+import styles from "./ListingCard.module.css";
 import CardCharacteristics from "./CardCharacteristics";
 
 const CardListing = () => (
   <>
     <Card
       hoverable
-      style={{
-        width: 350,
-      }}
+      className={styles.cardContainer}
       cover={
         <img
           alt="image of the living room of a house"
@@ -17,16 +15,16 @@ const CardListing = () => (
         />
       }
     >
-      <div className={ListingCardStyles.cardContent}>
+      <div className={styles.cardContent}>
         <div>
-          <p className={ListingCardStyles.headerSubtitle}>
+          <p className={styles.headerSubtitle}>
             Ciudad Autónoma de Buenos Aires
           </p>
-          <div className={ListingCardStyles.cardHeader}>
-            <h2 className={ListingCardStyles.headerTitle}>
+          <div className={styles.cardHeader}>
+            <h2 className={styles.headerTitle}>
               Departamento 3 ambientes
             </h2>
-            <p className={ListingCardStyles.cardPrice}>$135.000</p>
+            <p className={styles.cardPrice}>$135.000</p>
           </div>
         </div>
         <p>

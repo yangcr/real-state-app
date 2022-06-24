@@ -14,3 +14,7 @@
   flex-direction: row;
   gap: 1.3em;
 }
+
+.formSelect {
+  width: 120px;
+}
