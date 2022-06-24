@@ -34,3 +34,8 @@
   font-weight: 700;
   margin-bottom: 0;
 }
+
+.cardSquareMeters {
+  text-align: center;
+  font-size: 2em;
+}

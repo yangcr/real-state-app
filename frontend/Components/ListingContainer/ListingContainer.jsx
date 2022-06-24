@@ -1,40 +1,27 @@
 import React from "react";
 import ListingCard from "../ListingCard/ListingCard.jsx"
-import ListingContainerStyles from "./ListingContainerStyles.module.css";
+import styles from "./ListingContainerStyles.module.css";
+import PropertiesArray from "./PropertiesMock.js";
 
 function ListingContainer() {
+  const [properties, setProperties] = React.useState([...PropertiesArray]);
   return (
     <>
-      <div className={ListingContainerStyles.listingContainer}>
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
-        <ListingCard />
+      <div className={styles.listingContainer}>
+        {properties.map((property) => {
+          return <>
+            <ListingCard 
+            sku={property.sku}
+            characteristics={property.characteristics}
+            property={property}
+            cardLocation={property.cardLocation}
+            cardTitle={property.cardTitle}
+            imageSource={property.imageSource}
+            cardPrice={property.price}
+            productDescription={property.productDescription}
+            squareMeters={property.squareMeters}/>;
+          </>
+        })}
       </div>
     </>
   );
