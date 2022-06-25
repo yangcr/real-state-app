@@ -1,12 +1,12 @@
 import React from "react";
 import ListingCard from "../ListingCard/ListingCard.jsx"
 import styles from "./ListingContainerStyles.module.css";
-import PropertiesArray from "./PropertiesMock.js";
+import PropertiesArray from "../../utils/PropertiesMock.js";
 
 function ListingContainer() {
   const [properties, setProperties] = React.useState([...PropertiesArray]);
   return (
-    <>
+    
       <div className={styles.listingContainer}>
         {properties.map((property) => {
           return <>
@@ -23,7 +23,7 @@ function ListingContainer() {
           </>
         })}
       </div>
-    </>
+    
   );
 }
 
