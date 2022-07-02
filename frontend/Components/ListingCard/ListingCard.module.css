@@ -1,41 +1,40 @@
-.cardContainer {
+.container {
   width: 350px;
 }
 
-.cardContent {
+.content {
   display: flex;
   flex-direction: column;
   gap: 1.3em;
 }
 
-.cardHeader {
+.header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
   white-space: nowrap;
 }
 
-.headerSubtitle {
+.subtitle {
   font-size: 16px;
   font-style: italic;
   margin-bottom: 0;
 }
 
-.headerTitle {
+.title {
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 200px;
 }
 
-.cardPrice {
+.price {
   font-size: 1.3em;
   font-weight: 700;
   margin-bottom: 0;
 }
 
-.cardSquareMeters {
+.squareMeters {
   text-align: center;
   font-size: 2em;
 }

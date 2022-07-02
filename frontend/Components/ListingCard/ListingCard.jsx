@@ -7,7 +7,7 @@ const CardListing = ({ sku, characteristics, cardLocation, cardTitle, imageSourc
     <Card
       sku={sku}
       hoverable
-      className={styles.cardContainer}
+      className={styles.container}
       cover={
         <img
           alt="image of the living room of a house"
@@ -15,19 +15,19 @@ const CardListing = ({ sku, characteristics, cardLocation, cardTitle, imageSourc
         />
       }
     >
-      <div className={styles.cardContent}>
+      <div className={styles.content}>
         <div>
-          <p className={styles.headerSubtitle}>
+          <p className={styles.subtitle}>
             {cardLocation}
           </p>
-          <div className={styles.cardHeader}>
-            <h2 className={styles.headerTitle}>
+          <div className={styles.header}>
+            <h2 className={styles.title}>
               {cardTitle}
             </h2>
-            <p className={styles.cardPrice}>{cardPrice}</p>
+            <p className={styles.price}>{cardPrice}</p>
           </div>
         </div>
-        <h3 className={styles.cardSquareMeters}>{squareMeters}</h3>
+        <h3 className={styles.squareMeters}>{squareMeters}</h3>
         <p>
           {productDescription}
         </p>
