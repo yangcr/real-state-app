@@ -5,13 +5,12 @@ const { Option } = Select;
 
 function SearchBox() {
   return (
-    <>
-      <Form layout="vertical" className={styles.formContainer}>
+      <Form layout="vertical" className={styles.container}>
         <div className={styles.formGroup}>
           <Form.Item label="Operation type">
             <Select
               defaultValue="all"
-              className={styles.formSelect}
+              className={styles.select}
             >
               <Option value="all">All</Option>
               <Option value="buy">Buy</Option>
@@ -22,7 +21,7 @@ function SearchBox() {
           <Form.Item label="Property type">
             <Select
               defaultValue="all"
-              className={styles.formSelect}
+              className={styles.select}
             >
               <Option value="all">All</Option>
               <Option value="house">House</Option>
@@ -59,7 +58,6 @@ function SearchBox() {
           />
         </Form.Item>
       </Form>
-    </>
   );
 }
 

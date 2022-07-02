@@ -2,19 +2,17 @@
   min-width: 250px;
 }
 
-.formContainer {
+.container {
   display: flex;
-  flex-direction: row;
   gap: 5em;
   justify-content: center;
 }
 
 .formGroup {
   display: flex;
-  flex-direction: row;
   gap: 1.3em;
 }
 
-.formSelect {
+.select {
   width: 120px;
 }
