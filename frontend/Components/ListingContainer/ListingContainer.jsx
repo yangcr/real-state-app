@@ -1,17 +1,16 @@
 import React from "react";
 import ListingCard from "../ListingCard/ListingCard.jsx"
 import styles from "./ListingContainerStyles.module.css";
-import PropertiesArray from "../../utils/PropertiesMock.js";
+import propertiesMock from "../../utils/propertiesMock.json"
 
 function ListingContainer() {
-  const [properties, setProperties] = React.useState([...PropertiesArray]);
   return (
     
       <div className={styles.listingContainer}>
-        {properties.map((property) => {
+        {propertiesMock.map((property) => {
           return <>
             <ListingCard
-              sku={property.sku}
+              key={property.sku}
               characteristics={property.characteristics}
               property={property}
               cardLocation={property.cardLocation}

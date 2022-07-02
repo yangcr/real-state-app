@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from './Home.module.css'
 import SearchBox from '../Components/SearchBox/SearchBox';
 import ListingContainer from '../Components/ListingContainer/ListingContainer';
 
