@@ -4,7 +4,6 @@ import styles from "./ListingCard.module.css";
 import CardCharacteristics from "./CardCharacteristics";
 
 const CardListing = ({ sku, characteristics, cardLocation, cardTitle, imageSource, cardPrice, productDescription, squareMeters }) => (
-  <>
     <Card
       sku={sku}
       hoverable
@@ -35,7 +34,6 @@ const CardListing = ({ sku, characteristics, cardLocation, cardTitle, imageSourc
         <CardCharacteristics characteristics={characteristics} />
       </div>
     </Card>
-  </>
 );
 
 export default CardListing;
