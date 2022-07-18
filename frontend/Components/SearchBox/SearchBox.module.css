@@ -1,0 +1,18 @@
+.searchInput {
+  min-width: 250px;
+}
+
+.container {
+  display: flex;
+  gap: 5em;
+  justify-content: center;
+}
+
+.formGroup {
+  display: flex;
+  gap: 1.3em;
+}
+
+.select {
+  width: 120px;
+}

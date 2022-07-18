@@ -5,5 +5,5 @@ This repo contains both frontend and backend code for a real-state listing appli
 
 # Stack
 
-- nextJS
-- Express
+- nextJS (frontend)
+- Express (backend)

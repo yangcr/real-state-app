@@ -1,0 +1,40 @@
+.container {
+  width: 350px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.title {
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 200px;
+}
+
+.price {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.squareMeters {
+  text-align: center;
+  font-size: 2em;
+}
