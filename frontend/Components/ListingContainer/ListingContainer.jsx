@@ -21,7 +21,6 @@ function ListingContainer() {
               squareMeters={property.squareMeters} />
           </>
         })}
-        <div className={[styles.flexFiller]}></div>
       </div>
     
   );

@@ -1,8 +1,5 @@
 .listingContainer {
   display: flex;
   flex-wrap: wrap;
-}
-
-.flexFiller {
-  flex-grow: 1;
+  justify-content: center;
 }
