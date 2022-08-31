@@ -12,7 +12,7 @@ function SearchBox() {
   const [operationType, setOperationType] = useState("all");
 
   return (
-    <>
+    <div className={styles.searchBoxComponent}>
       <Button className={[styles.buttonForm, styles.buttonBuy]}>
         Buy
       </Button>
@@ -22,7 +22,7 @@ function SearchBox() {
       <Button className={[styles.buttonForm, styles.buttonAll]}>
         All
       </Button>
-      <Form layout="vertical" className={[styles.container, operationType == "buy" ? styles.containerBuy : operationType == "rent" ? styles.containerRent : styles.containerAll]}>
+      <Form layout="vertical" className={[styles.formContainer, operationType == "buy" ? styles.containerBuy : operationType == "rent" ? styles.containerRent : styles.containerAll]}>
         <div className={styles.formGroup}>
           <Form.Item label="Property type">
             <Select
@@ -64,7 +64,7 @@ function SearchBox() {
           />
         </Form.Item>
       </Form>
-    </>
+    </div>
   );
 }
 

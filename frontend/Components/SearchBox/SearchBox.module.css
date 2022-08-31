@@ -2,7 +2,11 @@
   min-width: 250px;
 }
 
-.container {
+.searchBoxComponent {
+  margin-bottom: 2em;
+}
+
+.formContainer {
   display: flex;
   gap: 5em;
   justify-content: center;
