@@ -18,7 +18,7 @@ function ListingContainer() {
               imageSource={property.imageSource}
               cardPrice={property.price}
               productDescription={property.productDescription}
-              squareMeters={property.squareMeters} />;
+              squareMeters={property.squareMeters} />
           </>
         })}
       </div>

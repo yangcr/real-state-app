@@ -1,23 +1,29 @@
 import React from "react";
-import { Input, Select, Form } from "antd";
+import { Input, Select, Form, Button } from "antd";
 import styles from "./SearchBox.module.css";
+import { useState } from "react";
 const { Option } = Select;
 
 function SearchBox() {
-  return (
-      <Form layout="vertical" className={styles.container}>
-        <div className={styles.formGroup}>
-          <Form.Item label="Operation type">
-            <Select
-              defaultValue="all"
-              className={styles.select}
-            >
-              <Option value="all">All</Option>
-              <Option value="buy">Buy</Option>
-              <Option value="rent">Rent</Option>
-            </Select>
-          </Form.Item>
 
+  function selectTransactionType(value) {
+    setTransactionType(value);
+  }
+  const [operationType, setOperationType] = useState("all");
+
+  return (
+    <>
+      <Button className={[styles.buttonForm, styles.buttonBuy]}>
+        Buy
+      </Button>
+      <Button className={[styles.buttonForm, styles.buttonRent]}>
+        Rent
+      </Button>
+      <Button className={[styles.buttonForm, styles.buttonAll]}>
+        All
+      </Button>
+      <Form layout="vertical" className={[styles.container, operationType == "buy" ? styles.containerBuy : operationType == "rent" ? styles.containerRent : styles.containerAll]}>
+        <div className={styles.formGroup}>
           <Form.Item label="Property type">
             <Select
               defaultValue="all"
@@ -58,6 +64,7 @@ function SearchBox() {
           />
         </Form.Item>
       </Form>
+    </>
   );
 }
 

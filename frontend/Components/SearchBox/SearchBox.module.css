@@ -6,6 +6,10 @@
   display: flex;
   gap: 5em;
   justify-content: center;
+  height: 150px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
 }
 
 .formGroup {
@@ -15,4 +19,34 @@
 
 .select {
   width: 120px;
+}
+
+.buttonForm {
+  width: 25%;
+}
+
+.buttonBuy {
+  background: rgb(92, 92, 92);
+  color: white;
+}
+
+.buttonRent {
+  background: rgb(13, 112, 173);
+  color: white;
+}
+
+.buttonAll {
+  background: rgb(212, 212, 212);
+}
+
+.containerBuy {
+  background: rgb(92, 92, 92)
+}
+
+.containerRent {
+  background: rgb(13, 112, 173);
+}
+
+.containerAll {
+  background: rgb(212, 212, 212);
 }
