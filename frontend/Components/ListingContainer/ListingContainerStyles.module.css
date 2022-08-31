@@ -1,6 +1,8 @@
 .listingContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
-  justify-content: space-between;
+}
+
+.flexFiller {
+  flex-grow: 1;
 }
