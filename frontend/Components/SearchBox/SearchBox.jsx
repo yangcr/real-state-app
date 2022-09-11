@@ -55,7 +55,7 @@ function SearchBox() {
             />
           </Form.Item>
 
-          <Form.Item label="Max. price">
+          <Form.Item label="Max. price" className={styles.formLabel}>
             <Input
               placeholder="e.g: 500.000"
               allowClear

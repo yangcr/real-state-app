@@ -14,7 +14,8 @@
   border-radius: 5px;
   display: flex;
   align-items: center;
-  z-index: 2;
+  background: #1890ff;
+  width: 100%;
 }
 .operationRadioGroup {
   z-index: 1;
@@ -31,30 +32,4 @@
 
 .buttonForm {
   width: 25%;
-}
-
-.buttonBuy {
-  background: rgb(92, 92, 92);
-  color: white;
-}
-
-.buttonRent {
-  background: rgb(13, 112, 173);
-  color: white;
-}
-
-.buttonAll {
-  background: rgb(212, 212, 212);
-}
-
-.containerBuy {
-  background: rgb(92, 92, 92)
-}
-
-.containerRent {
-  background: rgb(13, 112, 173);
-}
-
-.containerAll {
-  background: rgb(212, 212, 212);
 }
